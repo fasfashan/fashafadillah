@@ -6,7 +6,7 @@ export default function Work() {
       className="mt-20  space-y-8 bg-secondary border border-gray rounded-lg md:p-16 p-8"
     >
       <div className="flex px-4 py-1 bg-sky-600  w-fit rounded-lg items-center gap-2">
-        <p>Work</p>
+        <p className="text-white font-medium">Work</p>
         <BriefCase />
       </div>
 

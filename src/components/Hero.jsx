@@ -28,7 +28,9 @@ export default function Hero() {
             <circle cx="8" cy="8" r="8" fill="#3CCB7F" />
             <circle cx="8" cy="8" r="5.5" stroke="#099250" />
           </svg>
-          <p className="text-sm text-neutral-400">Available for New Project</p>
+          <p id="hero" className="text-sm text-neutral-400">
+            Available for New Project
+          </p>
         </div>
 
         <h1 className="md:text-5xl text-4xl font-semibold leading-snug">
