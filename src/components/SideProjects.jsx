@@ -116,6 +116,7 @@ export default function SideProjects() {
         </p>
         <video className="rounded-lg w-full" autoPlay muted loop playsInline>
           <source src={Niagahoster} type="video/webm" />
+
           <source src={Niagahoster} type="video/mp4" />
         </video>
       </div>
@@ -126,7 +127,7 @@ export default function SideProjects() {
           <img
             data-tooltip-id="BCA"
             data-tooltip-content="BCA Innovation Convention 2022"
-            className="md:w-72 w-full rounded-lg border-2 -2-gray"
+            className="md:w-64 w-full rounded-lg border-2 -2-gray"
             src={BCA}
             alt="BCA"
           />
@@ -134,7 +135,7 @@ export default function SideProjects() {
           <img
             data-tooltip-id="Comika"
             data-tooltip-content="Redesign Website Comika.id"
-            className="md:w-72 w-full rounded-lg border-2 border-gray"
+            className="md:w-64 w-full rounded-lg border-2 border-gray"
             src={Comika}
             alt="Comika"
           />
@@ -142,7 +143,7 @@ export default function SideProjects() {
           <img
             data-tooltip-id="Gamefinity"
             data-tooltip-content="Redesign Website Gamefinity.id"
-            className="md:w-72 w-full rounded-lg border-2 border-gray"
+            className="md:w-64 w-full rounded-lg border-2 border-gray"
             src={Gamefinity}
             alt="Gamefinity"
           />
@@ -150,7 +151,7 @@ export default function SideProjects() {
           <img
             data-tooltip-id="Mizuho"
             data-tooltip-content="eChannel Mizuho"
-            className="md:w-72 w-full rounded-lg border-2 border-gray"
+            className="md:w-64 w-full rounded-lg border-2 border-gray"
             src={Mizuho}
             alt="Mizuho"
           />
