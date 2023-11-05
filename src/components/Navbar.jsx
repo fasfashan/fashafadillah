@@ -3,12 +3,15 @@ export default function Navbar() {
     <header className=" sticky top-2  z-30 ">
       <nav className="px-5  py-4 backdrop-blur-md  mt-3 border rounded-lg flex items-center justify-between bg-secondary/30 border-gray ">
         <a
-          href="#top"
-          className="md:text-3xl hover:text-neutral-400 text-2xl font-bold"
+          href="/"
+          className="md:text-3xl hover:text-neutral-400 text-xl font-bold"
         >
           Fasha.
         </a>
-        <ul className="flex items-center gap-6 text-sm">
+        <ul className="flex items-center md:gap-6 gap-2 md:text-sm text-xs">
+          <li className="hover:text-neutral-400 transition-all">
+            <a href="#top">Home</a>
+          </li>
           <li className="hover:text-neutral-400 transition-all">
             <a href="#work">Work</a>
           </li>

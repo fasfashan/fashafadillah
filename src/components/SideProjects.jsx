@@ -2,7 +2,19 @@ import Projects from "../assets/Projects";
 import Video from "../assets/dibimbing.mp4";
 import Niagahoster from "../assets/niagahoster.mp4";
 import Eksternal from "../assets/Eksternal";
+import BCA from "../assets/BIC-BCA.png";
+import Comika from "../assets/Comika.id.png";
+import Gamefinity from "../assets/Gamefinity.png";
+import Mizuho from "../assets/Mizuho.png";
+import { Tooltip } from "react-tooltip";
 export default function SideProjects() {
+  const toolTipStyle = {
+    color: "white",
+    backgroundColor: "#0284c7",
+    borderRadius: "8px",
+    fontSize: "12px",
+    fontWeight: 600,
+  };
   return (
     <div
       id="sideproject"
@@ -108,6 +120,45 @@ export default function SideProjects() {
         </video>
       </div>
       <hr className="border border-gray" />
+      <div className="space-y-8  ">
+        <div className="flex-wrap justify-around flex gap-4 ">
+          <Tooltip style={toolTipStyle} id="BCA" />
+          <img
+            data-tooltip-id="BCA"
+            data-tooltip-content="BCA Innovation Convention 2022"
+            className="md:w-72 w-full rounded-lg border-2 -2-gray"
+            src={BCA}
+            alt="BCA"
+          />
+          <Tooltip style={toolTipStyle} id="Comika" />
+          <img
+            data-tooltip-id="Comika"
+            data-tooltip-content="Redesign Website Comika.id"
+            className="md:w-72 w-full rounded-lg border-2 border-gray"
+            src={Comika}
+            alt="Comika"
+          />
+          <Tooltip style={toolTipStyle} id="Gamefinity" />
+          <img
+            data-tooltip-id="Gamefinity"
+            data-tooltip-content="Redesign Website Gamefinity.id"
+            className="md:w-72 w-full rounded-lg border-2 border-gray"
+            src={Gamefinity}
+            alt="Gamefinity"
+          />
+          <Tooltip style={toolTipStyle} id="Mizuho" />
+          <img
+            data-tooltip-id="Mizuho"
+            data-tooltip-content="eChannel Mizuho"
+            className="md:w-72 w-full rounded-lg border-2 border-gray"
+            src={Mizuho}
+            alt="Mizuho"
+          />
+        </div>
+        <div className="text-xs m-auto px-2 py-1 max-w-fit bg-primary border border-neutral-600 rounded-lg  text-center">
+          <p> Some case study in progress. Will finish it ASAP🫰🏻</p>
+        </div>
+      </div>
     </div>
   );
 }

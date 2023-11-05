@@ -10,7 +10,7 @@ export default function Hero() {
     color: "white",
     backgroundColor: "#0284c7",
     borderRadius: "8px",
-    fontSize: "14px",
+    fontSize: "12px",
     fontWeight: 600,
   };
   return (

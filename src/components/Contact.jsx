@@ -13,31 +13,33 @@ export default function Contact() {
         <p className="text-white font-medium">Let's Connect</p>
         <Spark />
       </div>
-      <div className="flex gap-4 items-center">
-        <a
-          className="flex items-center gap-1 hover:opacity-70 transition-all"
-          href="mailto:pasapadilah1410@gmail.com"
-        >
-          <Email /> Email{" "}
-        </a>
-        <a
-          target="_blank"
-          className="flex items-center gap-1 hover:opacity-70 transition-all"
-          href="https://www.linkedin.com/in/muhamad-fasha-fadillah/"
-        >
-          <LinkedIn /> LinkedIn{" "}
-        </a>
-        <a
-          target="_blank"
-          className="flex items-center gap-1 hover:opacity-70 transition-all"
-          href="https://github.com/fasfashan"
-        >
-          <Github /> Github{" "}
-        </a>
+      <div className="flex justify-between flex-wrap gap-4">
+        <div className="flex gap-4 items-center">
+          <a
+            className="flex items-center gap-1 hover:opacity-70 transition-all"
+            href="mailto:pasapadilah1410@gmail.com"
+          >
+            <Email /> Email{" "}
+          </a>
+          <a
+            target="_blank"
+            className="flex items-center gap-1 hover:opacity-70 transition-all"
+            href="https://www.linkedin.com/in/muhamad-fasha-fadillah/"
+          >
+            <LinkedIn /> LinkedIn{" "}
+          </a>
+          <a
+            target="_blank"
+            className="flex items-center gap-1 hover:opacity-70 transition-all"
+            href="https://github.com/fasfashan"
+          >
+            <Github /> Github{" "}
+          </a>
+        </div>
+        <p className="text-xs">
+          © {currentYear} Fasha Fadillah. All Rights Reserved.
+        </p>
       </div>
-      <p className="text-sm">
-        © {currentYear} Fasha Fadillah. All Rights Reserved.
-      </p>
     </footer>
   );
 }
