@@ -4,7 +4,11 @@ import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 
 function App() {
-  return <Navbar />;
+  return (
+    <div className="max-w-3xl m-auto p-3 md:p-0 ">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
