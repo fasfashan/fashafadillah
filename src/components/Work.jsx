@@ -3,10 +3,10 @@ export default function Work() {
   return (
     <div
       id="work"
-      className="mt-20 space-y-8 bg-secondary border border-gray rounded-lg md:p-16 p-8"
+      className="mt-20  space-y-8 bg-secondary border border-gray rounded-lg md:p-16 p-8"
     >
       <div className="flex px-4 py-1 bg-sky-600  w-fit rounded-lg items-center gap-2">
-        <p>Experience</p>
+        <p>Work</p>
         <BriefCase />
       </div>
 
