@@ -1,25 +1,16 @@
 export default function Navbar() {
   return (
-    <header className=" sticky top-2  z-30 ">
-      <nav className="px-5  py-4 backdrop-blur-md  mt-3 border rounded-lg flex items-center justify-between bg-secondary/30 border-gray ">
-        <a
-          href="/"
-          className="md:text-3xl hover:text-neutral-400 text-xl font-bold"
-        >
-          Fasha.
-        </a>
-        <ul className="flex items-center md:gap-6 gap-2 md:text-sm text-xs">
-          <li className="hover:text-neutral-400 transition-all">
-            <a href="#top">Home</a>
+    <header className="bg-emerald-700 border-b border-emerald-50 ">
+      <nav className="py-4 bg-emerald-700 max-w-6xl  text-emerald-50  xl:px-0 p-4  m-auto   flex items-center justify-between  ">
+        <img src="/logo.svg" alt="" />
+        <ul className="flex font-medium items-center md:gap-6 gap-2 md:text-lg text-md">
+          <li className="hover:text-emerald-200 transition-all">
+            <a className="" href="#work">
+              Work
+            </a>
           </li>
-          <li className="hover:text-neutral-400 transition-all">
-            <a href="#work">Work</a>
-          </li>
-          <li className="hover:text-neutral-400 transition-all">
-            <a href="#sideproject">Side Project</a>
-          </li>
-          <li className="p-2  bg-sky-500 hover:bg-sky-600 transition-all rounded-lg">
-            <a href="#contact">Contact</a>
+          <li className="hover:text-emerald-200 transition-all">
+            <a href="#sideproject"> Project</a>
           </li>
         </ul>
       </nav>

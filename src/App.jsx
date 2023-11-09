@@ -9,13 +9,18 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div id="top" className="max-w-3xl m-auto p-4 md:p-6 xl:p-0  ">
-      <Navbar />
-      <Hero />
-      <Work />
-      <SideProjects />
-      <Contact />
-    </div>
+    <>
+      <div className="bg-center  bg-cover bg-no-repeat md:min-h-screen xl:h-96 xl:bg-none bg-[url('/Hero-Background.jpg')]">
+        <Navbar />
+        <Hero />
+      </div>
+
+      <div id="top" className="max-w-5xl m-auto p-4 md:p-6 xl:p-0  ">
+        <Work />
+        <SideProjects />
+        <Contact />
+      </div>
+    </>
   );
 }
 

@@ -14,8 +14,8 @@ export default function Hero() {
     fontWeight: 600,
   };
   return (
-    <div className="mt-10 items-center grid grid-cols-12 gap-x-4 gap-y-10">
-      <div className="md:col-span-8 col-span-12 space-y-4">
+    <div className="py-20 max-w-5xl m-auto  items-center  gap-y-10">
+      <div className="max-w-xl space-y-4">
         <div className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,27 +23,27 @@ export default function Hero() {
             height="16"
             viewBox="0 0 16 16"
             fill="none"
-            className="animate-pulse"
+            className="animate-ping"
           >
             <circle cx="8" cy="8" r="8" fill="#3CCB7F" />
             <circle cx="8" cy="8" r="5.5" stroke="#099250" />
           </svg>
-          <p id="hero" className="text-sm text-neutral-400">
+          <p id="hero" className="text-sm text-white">
             Available for New Project
           </p>
         </div>
 
-        <h1 className="md:text-5xl text-4xl font-semibold leading-snug">
+        <h1 className="md:text-5xl text-4xl font-bold leading-tight">
           Passionate About Code and Design.
         </h1>
 
-        <p className="text-neutral-400 text-lg">
+        <p className="text-neutral-200 text-lg">
           Hi! I'm Fasha. If you're looking for a{" "}
-          <span className="text-white font-medium">designer</span> who has
+          <span className="text-white font-semibold">designer</span> who has
           strong skills in both{" "}
-          <span className="text-white font-medium">design</span> and{" "}
-          <span className="text-white font-medium">coding</span>, you have come
-          to the right place. Feel free to explore my work below.
+          <span className="text-white font-semibold">design</span> and{" "}
+          <span className="text-white font-semibold">coding</span>, you have
+          come to the right place. Feel free to explore my work below.
         </p>
         <div className="space-y-3">
           <p className="text-sm text-sky-500 font-semibold">
@@ -72,9 +72,6 @@ export default function Hero() {
             />
           </div>
         </div>
-      </div>
-      <div className="md:col-span-4 col-span-12">
-        <img className="w-full" src={HeroImg} alt="Avatar Fasha" />
       </div>
     </div>
   );
