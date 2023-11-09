@@ -3,6 +3,8 @@ import React from "../assets/React";
 import Tailwind from "../assets/Tailwind";
 import Wordpress from "../assets/Wordpress";
 import HeroImg from "../assets/fasha-image.svg";
+import Peace from "../assets/Peace";
+import Smile from "../assets/Smile";
 
 import { Tooltip } from "react-tooltip";
 export default function Hero() {
@@ -14,63 +16,32 @@ export default function Hero() {
     fontWeight: 600,
   };
   return (
-    <div className="py-20 max-w-5xl m-auto  items-center  gap-y-10">
-      <div className="max-w-xl space-y-4">
-        <div className="flex items-center gap-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            className="animate-ping"
-          >
-            <circle cx="8" cy="8" r="8" fill="#3CCB7F" />
-            <circle cx="8" cy="8" r="5.5" stroke="#099250" />
-          </svg>
-          <p id="hero" className="text-sm text-white">
-            Available for New Project
-          </p>
-        </div>
-
-        <h1 className="md:text-5xl text-4xl font-bold leading-tight">
-          Passionate About Code and Design.
+    <div className="bg-emerald-700 pb-20 pt-10">
+      <div className="max-w-4xl relative m-auto text-center space-y-8 ">
+        <Smile className="absolute animate-spin-slow top-16  right-10" />
+        <h1 className="text-emerald-50 z-50 text-7xl font-secondary leading-tight font-normal">
+          The Man Between FE Dev and UI Designer.
         </h1>
-
-        <p className="text-neutral-200 text-lg">
-          Hi! I'm Fasha. If you're looking for a{" "}
-          <span className="text-white font-semibold">designer</span> who has
-          strong skills in both{" "}
-          <span className="text-white font-semibold">design</span> and{" "}
-          <span className="text-white font-semibold">coding</span>, you have
-          come to the right place. Feel free to explore my work below.
+        <p className="md:max-w-3xl m-auto text-xl font-light text-emerald-50 ">
+          Hi! I’m <spa className="font-bold">Fasha</spa> If you're looking for a{" "}
+          <span className="font-bold">designer</span> who has strong skills in
+          both <span className="font-bold">design</span> and{" "}
+          <span className="font-bold">coding</span>, you have come to the right
+          place. Feel free to explore my work below.
         </p>
-        <div className="space-y-3">
-          <p className="text-sm text-sky-500 font-semibold">
-            Current tech-stack:
-          </p>
-          <div className="flex bg-secondary px-6 py-3 gap-6 border rounded-lg border-gray w-fit">
-            <Tooltip style={toolTipStyle} id="reactJS" />
-            <React
-              dataToolTipContent="React for Front-end"
-              dataToolTipId="reactJS"
-            />
-            <Tooltip style={toolTipStyle} id="tailwindCSS" />
-            <Tailwind
-              dataToolTipContent="Tailwind for Styling "
-              dataToolTipId="tailwindCSS"
-            />
-            <Tooltip style={toolTipStyle} id="figma" />
-            <Figma
-              dataToolTipContent="Figma for Design"
-              dataToolTipId="figma"
-            />
-            <Tooltip style={toolTipStyle} id="wordpress" />
-            <Wordpress
-              dataToolTipContent="WordPress for CMS"
-              dataToolTipId="wordpress"
-            />
-          </div>
+        <div className="flex gap-4 justify-center">
+          <a
+            className="font-bold transition-all hover:opacity-80 px-8 py-3 bg-emerald-50 text-emerald-600"
+            href=""
+          >
+            Resume
+          </a>
+          <a
+            className="font-bold transition-all hover:opacity-80 px-8 py-3 bg-transparent border border-emerald-50 text-emerald-50"
+            href=""
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>

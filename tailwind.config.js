@@ -10,6 +10,12 @@ export default {
         'primary' : '#121926',
         'secondary': '#161D28',
         'gray': '#364152'
+      },
+      fontFamily:{
+        'secondary': "Georgia"
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },
