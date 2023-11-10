@@ -6,13 +6,13 @@ import Hero from "./components/Hero";
 import Work from "./components/Work";
 import SideProjects from "./components/SideProjects";
 import Contact from "./components/Contact";
-
+import Profile from "./components/Profile";
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-
+      <Profile/>
       <div id="top" className="max-w-5xl m-auto p-4 md:p-6 xl:p-0  ">
         <Work />
         <SideProjects />

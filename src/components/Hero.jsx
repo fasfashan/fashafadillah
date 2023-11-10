@@ -16,11 +16,11 @@ export default function Hero() {
     fontWeight: 600,
   };
   return (
-    <div className="bg-emerald-700 pb-20 pt-10">
-      <div className="max-w-4xl relative m-auto text-center space-y-8 ">
-        <Smile className="absolute animate-spin-slow top-16  right-10" />
-        <h1 className="text-emerald-50 z-50 text-7xl font-secondary leading-tight font-normal">
-          The Man Between FE Dev and UI Designer.
+    <div className="bg-emerald-700 border-b border-emerald-50 pb-20 px-4 pt-10">
+      <div className="max-w-4xl relative 6 m-auto text-center space-y-8 ">
+        <Smile className="absolute animate-spin-slow right-10 w-16 -top-16 " />
+        <h1 className="text-emerald-50 z-50 xl:text-8xl md:text-6xl text-5xl font-secondary leading-tight font-normal">
+          Bridging Code and Design for Seamless Web Experiences.
         </h1>
         <p className="md:max-w-3xl m-auto text-xl font-light text-emerald-50 ">
           Hi! I’m <spa className="font-bold">Fasha</spa> If you're looking for a{" "}

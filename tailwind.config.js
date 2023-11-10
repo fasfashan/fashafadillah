@@ -9,7 +9,7 @@ export default {
       colors:{
         'primary' : '#121926',
         'secondary': '#161D28',
-        'gray': '#364152'
+        'gra  y': '#364152'
       },
       fontFamily:{
         'secondary': "Georgia"
