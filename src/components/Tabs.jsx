@@ -43,19 +43,19 @@ export default function Tabs() {
   });
 
   return (
-    <div className="w-full max-w-md px-2  sm:px-0">
+    <div className="w-full  sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-2  border border-emerald-50 p-3">
+        <Tab.List className="flex space-x-2 rounded-lg  border border-neutral-400 p-3">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full  py-2 text-sm font-medium leading-5 text-emerald-600 font-semibold",
+                  "w-full rounded-lg  py-3 text-sm  leading-5 text-emerald-600 font-semibold",
                   "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none ",
                   selected
-                    ? "bg-emerald-50 "
-                    : "text-emerald-50 hover:bg-white/[0.12] hover:text-white"
+                    ? "bg-emerald-500 text-white "
+                    : "text-neutral-400  hover:bg-emerald-50 transition-all hover:text-neutral-500"
                 )
               }
             >
@@ -68,18 +68,18 @@ export default function Tabs() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "border border-emerald-50 p-3",
+                "border border-neutral-400 rounded-lg p-3",
                 "ring-white/60 "
               )}
             >
               <ul>
                 {posts.map((post) => (
                   <li key={post.id} className="relative space-y-3 p-3 ">
-                    <h3 className=" font-semibold leading-5">
+                    <h3 className=" font-medium text-neutral-900">
                       {post.title} &middot; {post.date}
                     </h3>
-                    <hr />
-                    <p className="text-sm text-emerald-50 leading-relaxed font-light">
+                    <hr className="border-1 border-neutral-400" />
+                    <p className="text-base text-neutral-500  leading-loose ">
                       {post.content}
                     </p>
                   </li>

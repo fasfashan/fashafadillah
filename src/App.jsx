@@ -12,12 +12,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Profile/>
-      <div id="top" className="max-w-5xl m-auto p-4 md:p-6 xl:p-0  ">
-        <Work />
-        <SideProjects />
-        <Contact />
-      </div>
+      <Profile />
+      <SideProjects />
+      <Contact />
     </>
   );
 }

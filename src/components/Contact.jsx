@@ -7,14 +7,10 @@ export default function Contact() {
   return (
     <footer
       id="contact"
-      className="mt-20 mb-10  space-y-8 bg-secondary border border-gray rounded-lg md:px-16 p-8"
+      className="bg-gradient-to-r from-rose-100 to-teal-100 flex flex-col py-10 gap-8  items-center   mt-32 "
     >
-      <div className="flex px-4 py-1 bg-sky-600  w-fit rounded-lg items-center gap-2">
-        <p className="text-white font-medium">Let's Connect</p>
-        <Spark />
-      </div>
-      <div className="flex justify-between flex-wrap gap-4">
-        <div className="flex gap-4 items-center">
+      <div className="   flex-wrap  max-w-6xl m-auto justify-between">
+        <div className="flex text-neutral-900 gap-4 items-center">
           <a
             className="flex items-center gap-1 hover:opacity-70 transition-all"
             href="mailto:pasapadilah1410@gmail.com"
@@ -36,10 +32,10 @@ export default function Contact() {
             <Github /> Github{" "}
           </a>
         </div>
-        <p className="text-xs">
-          © {currentYear} Fasha Fadillah. All Rights Reserved.
-        </p>
       </div>
+      <p className=" text-center">
+        © {currentYear} Fasha Fadillah. All Rights Reserved.
+      </p>
     </footer>
   );
 }

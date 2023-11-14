@@ -1,163 +1,136 @@
-import Projects from "../assets/Projects";
-import Video from "../assets/dibimbing.mp4";
-import Niagahoster from "../assets/niagahoster.mp4";
-import Eksternal from "../assets/Eksternal";
-import BCA from "../assets/BIC-BCA.png";
-import Comika from "../assets/Comika.id.png";
-import Gamefinity from "../assets/Gamefinity.png";
-import Mizuho from "../assets/Mizuho.png";
-import { Tooltip } from "react-tooltip";
+import Dibimbing from "../assets/dibimbing.png";
+import Niagahoster from "../assets/Niagahoster.png";
+import DesignHub from "../assets/DesignHub.png";
+import Dashboard from "../assets/Dashboard.png";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function SideProjects() {
-  const toolTipStyle = {
-    color: "white",
-    backgroundColor: "#0284c7",
-    borderRadius: "8px",
-    fontSize: "12px",
-    fontWeight: 600,
-  };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
-      id="sideproject"
-      className="mt-20 space-y-8 bg-secondary border border-gray rounded-lg md:p-16 p-8"
+      id="project"
+      className="space-y-32 m-auto   mt-32 md:max-w-6xl  p-5  rounded-lg xl:max-w-7xl"
     >
-      <div className="flex px-4 py-1 bg-sky-600  w-fit rounded-lg items-center gap-2">
-        <p className="text-white font-medium">Side Projects</p>
-        <Projects />
+      <div className="space-y-6">
+        <div className="  gap-10 grid items-center grid-cols-12">
+          <img
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            className="md:col-span-7 w-full hover:scale-95 transition-all  col-span-12"
+            src={Dibimbing}
+            alt="Dibimbing.id"
+          />
+          <div
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            className="md:col-span-5 col-span-12 space-y-2  flex flex-col "
+          >
+            <h3 className=" md:text-xl text-base font-semibold   text-black">
+              Dibimbing Web Design Challange
+            </h3>
+            <p className="  md:text-xl text-base text-neutral-500  md:leading-loose leading-relaxed">
+              Dibimbing.id making a "Beauty of Indonesia" web design challange
+              competition. In this project I made a single App Application List
+              of Volcanoes in Indonesia. I use Vite JS and Tailwind CSS for this
+              project.{" "}
+              <a
+                className="underline text-black hover:opacity-60"
+                target="_blank"
+                href="https://www.linkedin.com/posts/dibimbing-id_dibimbingid-webdesignchallenge-dibimbingchallenge-activity-7121068536130674689-rluB?utm_source=share&utm_medium=member_desktop"
+              >
+                I won first place in this challenge.
+              </a>{" "}
+            </p>
+            <a
+              className="font-bold w-fit transition-all hover:opacity-80 px-8 py-3 bg-emerald-600 text-emerald-50"
+              href="https://dibimbing-web-design-challenge.vercel.app/"
+              target="_blank"
+            >
+              Live Website
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <a
-            target="_blank"
-            href="https://dibimbing-web-design-challenge.vercel.app/"
-            className="md:text-2xl hover:underline text-lg font-semibold"
+      <div className="space-y-6">
+        <div className="  gap-10 grid items-center grid-cols-12">
+          <img
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            className="md:col-span-7 hover:scale-95 transition-all  col-span-12"
+            src={Niagahoster}
+            alt="Niagahoster"
+          />
+          <div
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            className="md:col-span-5 col-span-12 space-y-2  flex flex-col "
           >
-            Dibibimbing Web Design Challange
-          </a>
-          <a
-            target="_blank"
-            href="https://dibimbing-web-design-challenge.vercel.app/"
-          >
-            {" "}
-            <Eksternal />
-          </a>
+            <h3 className=" md:text-xl text-base  font-semibold text-black">
+              Niagahoster Landing Page Contest
+            </h3>
+            <p className=" md:text-xl text-base text-neutral-500  md:leading-loose leading-relaxed">
+              Niagahoster created a #journeywithniagahoster landing page
+              competition. Participants must create a landing page containing
+              articles about their experiences using Niagahoster services. In
+              this competition,{" "}
+              <a
+                className="underline text-black"
+                target="_blank"
+                href="https://www.instagram.com/p/CgCGq_VPFur/?utm_source=ig_web_copy_link"
+              >
+                I got 3rd place.
+              </a>{" "}
+            </p>
+            <a
+              className="font-bold w-fit transition-all hover:opacity-80 px-8 py-3 bg-emerald-600 text-emerald-50"
+              href="https://dokumentasiwebsite.notion.site/dokumentasiwebsite/Lomba-Landing-Page-JourneyWithNiagahoster-4c9ef0e3a331452c98af7a8048d6a187"
+              target="_blank"
+            >
+              Case Study
+            </a>
+          </div>
         </div>
-
-        <div className="flex items-center gap-2">
-          <span className="py-1 select-none px-2 border-2 text-sky-800 font-semibold border-sky-300 bg-sky-50 rounded-lg text-xs">
-            Vite JS
-          </span>
-          <span className="py-1 select-none px-2 border-2 text-indigo-800 font-semibold border-indigo-400 bg-indigo-50 rounded-lg text-xs">
-            Tailwind
-          </span>
-          <span className="py-1 select-none px-2 border-2 text-green-800 font-semibold border-green-600 bg-green-50 rounded-lg text-xs">
-            Vercell
-          </span>
-        </div>
-        <p className="text-sm text-neutral-400 leading-relaxed">
-          <span className="text-white"> Dibimbing.id</span> making a{" "}
-          <span className="text-white">"Beauty of Indonesia"</span> web design
-          challange competition. In this project I made a single App Application
-          List of Volcanoes in Indonesia. I use Vite JS and Tailwind CSS for
-          this project.{" "}
-          <a
-            className="text-white underline"
-            target="_blank"
-            href="https://www.linkedin.com/posts/dibimbing-id_dibimbingid-webdesignchallenge-dibimbingchallenge-activity-7121068536130674689-rluB?utm_source=share&utm_medium=member_desktop"
-          >
-            I won first place
-          </a>{" "}
-          in this challenge.
-        </p>
-        <video className="rounded-lg w-full" autoPlay muted loop playsInline>
-          <source src={Video} type="video/webm" />
-          <source src={Video} type="video/mp4" />
-        </video>
       </div>
-      <hr className="border border-gray" />
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <a
-            target="_blank"
-            href="https://dokumentasiwebsite.notion.site/dokumentasiwebsite/Lomba-Landing-Page-JourneyWithNiagahoster-4c9ef0e3a331452c98af7a8048d6a187"
-            className="md:text-2xl hover:underline text-lg font-semibold"
+      <div className="space-y-6">
+        <h3
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          className="font-secondary text-black text-center text-3xl"
+        >
+          Another case study in progress
+        </h3>
+        <div className="grid gap-10 grid-cols-2">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            className="md:col-span-1 space-y-8 col-span-2"
           >
-            Niagahoster Landing Page Contest
-          </a>
-          <a
-            target="_blank"
-            href="https://dokumentasiwebsite.notion.site/dokumentasiwebsite/Lomba-Landing-Page-JourneyWithNiagahoster-4c9ef0e3a331452c98af7a8048d6a187"
+            <img src={DesignHub} alt="DesignHub" />
+            <div class="w-full bg-neutral-300  h-3 ">
+              <div class="bg-emerald-600 h-3 " style={{ width: "30%" }}></div>
+            </div>
+          </div>
+          <div
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            className="md:col-span-1 col-span-2 space-y-8"
           >
-            {" "}
-            <Eksternal />
-          </a>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="py-1 select-none px-2 border-2 text-sky-800 font-semibold border-sky-300 bg-sky-50 rounded-lg text-xs">
-            Bootstrap
-          </span>
-          <span className="py-1 select-none px-2 border-2 text-indigo-800 font-semibold border-indigo-400 bg-indigo-50 rounded-lg text-xs">
-            Niagahoster
-          </span>
-        </div>
-        <p className="text-sm text-neutral-400 leading-relaxed">
-          <span className="text-white">Niagahoster</span> created a{" "}
-          <span className="text-white">#journeywithniagahoster</span> landing
-          page competition. Participants must create a landing page containing
-          articles about their experiences using Niagahoster services. In this
-          competition,{" "}
-          <a
-            className="text-white underline"
-            href="https://www.instagram.com/p/CgCGq_VPFur/?utm_source=ig_web_copy_link"
-          >
-            I got 3rd place.
-          </a>
-        </p>
-        <video className="rounded-lg w-full" autoPlay muted loop playsInline>
-          <source src={Niagahoster} type="video/webm" />
-
-          <source src={Niagahoster} type="video/mp4" />
-        </video>
-      </div>
-      <hr className="border border-gray" />
-      <div className="space-y-8  ">
-        <div className="flex-wrap justify-around flex gap-4 ">
-          <Tooltip style={toolTipStyle} id="BCA" />
-          <img
-            data-tooltip-id="BCA"
-            data-tooltip-content="BCA Innovation Convention 2022"
-            className="md:w-64 w-full rounded-lg border-2 -2-gray"
-            src={BCA}
-            alt="BCA"
-          />
-          <Tooltip style={toolTipStyle} id="Comika" />
-          <img
-            data-tooltip-id="Comika"
-            data-tooltip-content="Redesign Website Comika.id"
-            className="md:w-64 w-full rounded-lg border-2 border-gray"
-            src={Comika}
-            alt="Comika"
-          />
-          <Tooltip style={toolTipStyle} id="Gamefinity" />
-          <img
-            data-tooltip-id="Gamefinity"
-            data-tooltip-content="Redesign Website Gamefinity.id"
-            className="md:w-64 w-full rounded-lg border-2 border-gray"
-            src={Gamefinity}
-            alt="Gamefinity"
-          />
-          <Tooltip style={toolTipStyle} id="Mizuho" />
-          <img
-            data-tooltip-id="Mizuho"
-            data-tooltip-content="eChannel Mizuho"
-            className="md:w-64 w-full rounded-lg border-2 border-gray"
-            src={Mizuho}
-            alt="Mizuho"
-          />
-        </div>
-        <div className="text-xs m-auto px-2 py-1 max-w-fit bg-primary border border-neutral-600 rounded-lg  text-center">
-          <p> Some case study in progress. Will finish it ASAP🫰🏻</p>
+            <img src={Dashboard} alt="Dashboard" />
+            <div class="w-full bg-neutral-300  h-3 ">
+              <div class="bg-emerald-600 h-3 " style={{ width: "80%" }}></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,8 +8,8 @@ export default {
     extend: {
       colors:{
         'primary' : '#121926',
-        'secondary': '#161D28',
-        'gra  y': '#364152'
+        'secondary': '#E9BD10',
+        'gray': '#364152'
       },
       fontFamily:{
         'secondary': "Georgia"
