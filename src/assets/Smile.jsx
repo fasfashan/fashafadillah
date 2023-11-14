@@ -1,9 +1,6 @@
 export default function Smile({ className }) {
   return (
     <svg
-      data-aos="fade-up"
-      data-aos-delay="50"
-      data-aos-duration="1000"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="102"

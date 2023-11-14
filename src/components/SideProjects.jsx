@@ -16,12 +16,12 @@ export default function SideProjects() {
       className="space-y-32 m-auto   mt-32 md:max-w-6xl  p-5  rounded-lg xl:max-w-7xl"
     >
       <div className="space-y-6">
-        <div className="  gap-10 grid items-center grid-cols-12">
+        <div className="  gap-10 grid items-center grid-cols-2">
           <img
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
-            className="md:col-span-7 w-full hover:scale-95 transition-all  col-span-12"
+            className="md:col-span-1 object-cover  transition-all  col-span-2"
             src={Dibimbing}
             alt="Dibimbing.id"
           />
@@ -29,7 +29,7 @@ export default function SideProjects() {
             data-aos="fade-down"
             data-aos-delay="100"
             data-aos-duration="1000"
-            className="md:col-span-5 col-span-12 space-y-2  flex flex-col "
+            className="md:col-span-1 col-span-2 space-y-2  flex flex-col "
           >
             <h3 className=" md:text-xl text-base font-semibold   text-black">
               Dibimbing Web Design Challange
@@ -58,12 +58,12 @@ export default function SideProjects() {
         </div>
       </div>
       <div className="space-y-6">
-        <div className="  gap-10 grid items-center grid-cols-12">
+        <div className="  gap-10 grid items-center grid-cols-2">
           <img
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
-            className="md:col-span-7 hover:scale-95 transition-all  col-span-12"
+            className="md:col-span-1  object-cover  col-span-2"
             src={Niagahoster}
             alt="Niagahoster"
           />
@@ -71,7 +71,7 @@ export default function SideProjects() {
             data-aos="fade-down"
             data-aos-delay="100"
             data-aos-duration="1000"
-            className="md:col-span-5 col-span-12 space-y-2  flex flex-col "
+            className="md:col-span-1 col-span-2 space-y-2  flex flex-col "
           >
             <h3 className=" md:text-xl text-base  font-semibold text-black">
               Niagahoster Landing Page Contest
