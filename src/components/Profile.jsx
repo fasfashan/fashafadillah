@@ -60,7 +60,9 @@ export default function Profile() {
           data-aos-duration="1000"
           className="md:py-20 py-10 md:col-span-6 md:px-6  col-span-12 space-y-6"
         >
-          <h3 className="font-secondary text-3xl text-neutral-900">Work</h3>
+          <h3 className="font-secondary text-3xl text-neutral-900">
+            Experience
+          </h3>
           <Tabs />
         </div>
       </div>

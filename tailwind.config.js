@@ -1,23 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors:{
-        'primary' : '#121926',
-        'secondary': '#E9BD10',
-        'gray': '#364152'
+      colors: {
+        primary: "#121926",
+        secondary: "#E9BD10",
+        gray: "#364152",
       },
-      fontFamily:{
-        'secondary': "Georgia"
+      fontFamily: {
+        secondary: "Georgia",
       },
       animation: {
-        'spin-slow': 'spin 3s linear infinite',
-      }
+        "spin-slow": "spin 5s linear infinite",
+      },
     },
   },
   plugins: [],
-}
+};

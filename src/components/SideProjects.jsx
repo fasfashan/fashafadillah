@@ -2,7 +2,7 @@ import Dibimbing from "../assets/dibimbing.png";
 import Niagahoster from "../assets/Niagahoster.png";
 import DesignHub from "../assets/DesignHub.png";
 import Dashboard from "../assets/Dashboard.png";
-
+import DesignAgency from "../assets/DesignHub.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -15,6 +15,17 @@ export default function SideProjects() {
       id="project"
       className="space-y-32 m-auto   mt-32 md:max-w-6xl  p-5  rounded-lg xl:max-w-7xl"
     >
+      <div className="grid grid-cols-12 items-stretch gap-8">
+        <img
+          className="col-span-8 rounded-lg"
+          src={DesignAgency}
+          alt="Design Agency"
+        />
+        <div className="col-span-4 flex flex-col gap-y-8">
+          <img className="col-span-8" src={DesignAgency} alt="Design Agency" />
+          <img className="col-span-8" src={DesignAgency} alt="Design Agency" />
+        </div>
+      </div>
       <div className="space-y-6">
         <div className="  gap-10 grid items-center grid-cols-2">
           <img

@@ -1,4 +1,3 @@
-import Spark from "../assets/Spark";
 import Email from "../assets/Email";
 import LinkedIn from "../assets/LinkedIn";
 import Github from "../assets/Github";
@@ -7,7 +6,7 @@ export default function Contact() {
   return (
     <footer
       id="contact"
-      className="bg-gradient-to-r from-rose-100 to-teal-100 flex flex-col py-10 gap-8  items-center   mt-32 "
+      className="border-t border-neutral-400 flex flex-col py-10 gap-8  items-center   mt-32 "
     >
       <div className="   flex-wrap  max-w-6xl m-auto justify-between">
         <div className="flex text-neutral-900 gap-4 items-center">
