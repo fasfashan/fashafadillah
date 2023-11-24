@@ -6,7 +6,7 @@ export default function Email() {
       height="24"
       viewBox="0 0 32 32"
       fill="none"
-      className="fill-neutral-900"
+      className="fill-white"
     >
       <path
         d="M3.20553 9.41371L16.0001 15.811L28.7949 9.41363C28.6983 7.73307 27.3049 6.40002 25.6002 6.40002H6.4002C4.69542 6.40002 3.30201 7.73311 3.20553 9.41371Z"

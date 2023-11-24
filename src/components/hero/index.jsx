@@ -1,5 +1,6 @@
-import React from "../assets/React";
-import Smile from "../assets/Smile";
+/* eslint-disable react/no-unescaped-entities */
+import "../../index.css";
+import Smile from "../../assets/Smile";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,8 +9,11 @@ export default function Hero() {
     AOS.init();
   }, []);
   return (
-    <div className="bg-gradient-to-r from-rose-100 to-teal-100 border-b border-neutral-400 pb-20 p-5 pt-10">
-      <div className="xl:max-w-7xl md:max-w-6xl  relative 6 m-auto text-center space-y-8 ">
+    <div className="relative pb-20 p-5 pt-10 ">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="jumbo absolute -inset-[10px] opacity-40"></div>
+      </div>
+      <div className="xl:max-w-7xl  md:max-w-6xl  relative 6 m-auto text-center space-y-8 ">
         <Smile className="absolute md:right-36 xl:right-52 animate-spin-slow right-10 w-16 -top-16 " />
         <h1
           data-aos="fade-up"

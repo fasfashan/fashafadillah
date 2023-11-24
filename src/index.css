@@ -3,6 +3,62 @@
 @tailwind utilities;
 
 :root {
-  font-family: Archivo, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Plus Jakarta Sans, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   scroll-behavior: smooth;
+  background-color: #0a0a0a;
+}
+.jumbo {
+  --stripes: repeating-linear-gradient(
+    100deg,
+    #000 0%,
+    #000 7%,
+    transparent 10%,
+    transparent 12%,
+    #000 16%
+  );
+  --rainbow: repeating-linear-gradient(
+    100deg,
+    #60a5fa 10%,
+    #e879f9 15%,
+    #60a5fa 20%,
+    #5eead4 25%,
+    #60a5fa 30%
+  );
+  background-image: var(--stripes), var(--rainbow);
+  background-size: 300%, 200%;
+  background-position: 50% 50%, 50% 50%;
+
+  mask-image: radial-gradient(ellipse at 40% 0%, black 40%, transparent 80%);
+
+  pointer-events: none;
+}
+.jumbo {
+  background-image: var(--stripes), var(--rainbow);
+  filter: blur(80px) opacity(100%) saturate(300%);
+}
+.btn {
+  box-shadow: 0px 0px 0px 1px #f4f6f8, 0px 0px 0px 4px #2b2d43,
+    0px 17px 26px 0px rgba(0, 0, 0, 0.14),
+    0px 39px 61px -50px rgba(255, 255, 255, 0.3) inset;
+
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.jumbo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--stripes), var(--rainbow);
+  background-size: 200%, 100%;
+  animation: jumbo 40s linear infinite;
+  background-attachment: fixed;
+  mix-blend-mode: difference;
+}
+@keyframes jumbo {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
 }

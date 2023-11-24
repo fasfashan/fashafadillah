@@ -1,18 +1,14 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Contact from "./components/Contact";
-import Profile from "./components/Profile";
-import DesignExploration from "./components/DesignExploration";
-import DesignChallange from "./components/DesignChallange";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import DesignExploration from "./components/design-exploration";
+import DesignChallange from "./components/design-challenge";
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Profile />
-      <DesignChallange />
+      <Header />
       <DesignExploration />
-      <Contact />
+      <DesignChallange />
+      <Footer />
     </>
   );
 }

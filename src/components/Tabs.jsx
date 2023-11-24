@@ -51,11 +51,11 @@ export default function Tabs() {
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg  py-3 text-sm  leading-5 text-emerald-600 font-semibold",
+                  "w-full rounded-lg  py-3 text-sm  leading-5 text-black font-semibold",
                   "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none ",
                   selected
-                    ? "bg-emerald-500 text-white "
-                    : "text-neutral-400  hover:bg-emerald-50 transition-all hover:text-neutral-500"
+                    ? "bg-white text-black "
+                    : "text-neutral-400  hover:bg-white transition-all hover:text-black"
                 )
               }
             >
@@ -75,11 +75,11 @@ export default function Tabs() {
               <ul>
                 {posts.map((post) => (
                   <li key={post.id} className="relative space-y-3 p-3 ">
-                    <h3 className=" font-medium text-neutral-900">
+                    <h3 className=" font-medium text-white">
                       {post.title} &middot; {post.date}
                     </h3>
                     <hr className="border-1 border-neutral-400" />
-                    <p className="text-base text-neutral-500  leading-loose ">
+                    <p className="text-base text-neutral-400  leading-loose ">
                       {post.content}
                     </p>
                   </li>
