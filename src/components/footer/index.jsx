@@ -8,10 +8,10 @@ export default function Contact() {
   return (
     <footer
       id="contact"
-      className=" flex flex-col py-10 gap-8  items-center p-5   mt-32 "
+      className=" flex md:max-w-6xl m-auto  flex-col py-10 gap-8  items-center p-5   mt-32 "
     >
-      <div className="md:max-4xl space-y-8 xl:max-w-6xl">
-        <h2 className="md:text-7xl text-4xl  text-white font-bold ">
+      <div className="space-y-8 ">
+        <h2 className="md:text-6xl text-4xl  text-white font-bold ">
           Let's work together and create something{" "}
           <span className="underline">beautiful</span>!
         </h2>
@@ -23,7 +23,7 @@ export default function Contact() {
             Get in Touch
           </a>
         </div>
-        <div className="flex justify-between items-center pt-8 border-t border-neutral-400 flex-wrap">
+        <div className="flex justify-between gap-8 items-center pt-8 border-t border-neutral-400 flex-wrap">
           <p className=" text-white">
             © {currentYear} Fasha Fadillah. All Rights Reserved.
           </p>

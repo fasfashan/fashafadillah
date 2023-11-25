@@ -11,7 +11,7 @@ export default function DesignExploration() {
     AOS.init();
   }, []);
   return (
-    <div className=" m-auto space-y-0     md:max-w-4xl rounded-lg xl:max-w-6xl">
+    <div className=" m-auto space-y-0     md:max-w-6xl rounded-lg">
       {/* <div className="mb-16 p-5 space-y-4">
         <h3 className="md:text-6xl text-4xl   font-secondary text-black">
           Design Exploration

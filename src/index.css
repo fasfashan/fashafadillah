@@ -3,40 +3,50 @@
 @tailwind utilities;
 
 :root {
+  --stripes: repeating-linear-gradient(
+    100deg,
+    #000 0%,
+    #000 7%,
+    transparent 7%,
+    transparent 10%,
+    #000 10%,
+    #000 16%
+  );
+  --rainbow: repeating-linear-gradient(
+    100deg,
+    #60a5fa 10%,
+    #e879f9 10%,
+    #e879f9 15%,
+    #60a5fa 15%,
+    #60a5fa 20%,
+    #5eead4 20%,
+    #5eead4 25%,
+    #60a5fa 25%,
+    #60a5fa 30%
+  );
+}
+
+body {
   font-family: Plus Jakarta Sans, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   scroll-behavior: smooth;
   background-color: #0a0a0a;
 }
 .jumbo {
-  --stripes: repeating-linear-gradient(
-    100deg,
-    #000 0%,
-    #000 7%,
-    transparent 10%,
-    transparent 12%,
-    #000 16%
-  );
-  --rainbow: repeating-linear-gradient(
-    100deg,
-    #60a5fa 10%,
-    #e879f9 15%,
-    #60a5fa 20%,
-    #5eead4 25%,
-    #60a5fa 30%
-  );
   background-image: var(--stripes), var(--rainbow);
   background-size: 300%, 200%;
   background-position: 50% 50%, 50% 50%;
-
+  -webkit-mask-image: radial-gradient(
+    ellipse at 40% 0%,
+    black 40%,
+    transparent 80%
+  );
   mask-image: radial-gradient(ellipse at 40% 0%, black 40%, transparent 80%);
-
+  filter: blur(80px) opacity(100%) saturate(300%);
+  -webkit-filter: blur(40px) opacity(100%) saturate(300%);
   pointer-events: none;
 }
-.jumbo {
-  background-image: var(--stripes), var(--rainbow);
-  filter: blur(80px) opacity(100%) saturate(300%);
-}
+
 .btn {
   box-shadow: 0px 0px 0px 1px #f4f6f8, 0px 0px 0px 4px #2b2d43,
     0px 17px 26px 0px rgba(0, 0, 0, 0.14),

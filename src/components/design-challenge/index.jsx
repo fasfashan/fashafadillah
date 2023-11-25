@@ -14,10 +14,7 @@ export default function DesignChallange() {
     AOS.init();
   }, []);
   return (
-    <div
-      id="works"
-      className=" m-auto  mt-20  p-5 md:max-w-4xl  rounded-lg xl:max-w-6xl"
-    >
+    <div id="works" className=" m-auto  mt-20  p-5 md:max-w-6xl  rounded-lg ">
       <div className="mb-16 flex pb-2 items-center justify-between border-b border-neutral-400 space-y-4">
         <h3 className="font-medium xl:text-3xl text-xl     text-white">
           Recent Work

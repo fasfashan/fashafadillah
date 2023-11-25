@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className=" bg-neutral-950">
       <div className="z-10 relative">
-        <nav className="py-4  xl:max-w-6xl  md:max-w-4xl  text-emerald-50   p-5  m-auto   flex items-center justify-between  ">
+        <nav className="py-4 md:max-w-6xl  text-emerald-50   p-5  m-auto   flex items-center justify-between  ">
           <div className="flex items-center gap-x-3">
             <a
               target="_blank"
