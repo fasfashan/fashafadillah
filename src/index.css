@@ -4,7 +4,7 @@
 
 :root {
   --stripes: repeating-linear-gradient(
-    100deg,
+    to right,
     #000 0%,
     #000 7%,
     transparent 7%,
@@ -12,6 +12,7 @@
     #000 10%,
     #000 16%
   );
+
   --rainbow: repeating-linear-gradient(
     100deg,
     #60a5fa 10%,
@@ -43,7 +44,7 @@ body {
   );
   mask-image: radial-gradient(ellipse at 40% 0%, black 40%, transparent 80%);
   filter: blur(80px) opacity(100%) saturate(300%);
-  -webkit-filter: blur(40px) opacity(100%) saturate(300%);
+  -webkit-filter: blur(70px) opacity(100%) saturate(300%);
   pointer-events: none;
 }
 
