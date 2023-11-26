@@ -1,52 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import "../../index.css";
-import LinkedIn from "../../assets/LinkedIn";
-import Github from "../../assets/Github";
-export default function Contact() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer
-      id="contact"
-      className=" flex md:max-w-6xl m-auto  flex-col py-10 gap-8  items-center p-5   mt-32 "
-    >
-      <div className="space-y-8 ">
-        <h2 className="md:text-6xl text-4xl  text-white font-bold ">
-          Let's work together and create something{" "}
-          <span className="underline">beautiful</span>!
+    <footer className=" bg-neutral-100 mt-20">
+      <div className="max-w-5xl m-auto p-5">
+        <h2 className="md:text-5xl md:leading-tight text-2xl font-light py-20">
+          I'm available for{" "}
+          <span className="font-medium bg-clip-text text-transparent bg-gradient-to-b from-teal-300 to-teal-800">
+            {" "}
+            freelance projects{" "}
+          </span>{" "}
+          —feel free to initiate a project and let's explore how we can
+          collaborate.
         </h2>
-        <div>
-          <a
-            className="font-semibold transition-all rounded-md  px-5 py-2  bg-btn btn hover:bg-neutral-950 text-sm text-white"
-            href="mailto:pasapadilah1410@gmail.com"
-          >
-            Get in Touch
-          </a>
-        </div>
-        <div className="flex justify-between gap-8 items-center pt-8 border-t border-neutral-400 flex-wrap">
-          <p className=" text-white">
-            © {currentYear} Fasha Fadillah. All Rights Reserved.
-          </p>
-          <div className="flex items-center gap-x-3">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="p-2 border border-neutral-700 hover:bg-neutral-800 rounded-lg  transition-all"
-              href="https://www.linkedin.com/in/muhamad-fasha-fadillah/"
-            >
-              {" "}
-              <LinkedIn />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="p-2 border border-neutral-700 hover:bg-neutral-800 rounded-lg  transition-all"
-              href="https://github.com/fasfashan"
-            >
-              <Github />
-            </a>
-          </div>
-        </div>
+
+        <p className="pt-8 border-t border-neutral-300  font-light">
+          © {currentYear} Fasha Fadillah. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );

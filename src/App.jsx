@@ -1,14 +1,16 @@
+import Gallery from "./components/gallery";
 import Header from "./components/header";
-import Footer from "./components/footer";
-import DesignExploration from "./components/design-exploration";
-import DesignChallange from "./components/design-challenge";
+import Hero from "./components/hero";
+import RecentWork from "./components/recent-work";
+import Contact from "./components/footer";
 function App() {
   return (
     <>
       <Header />
-      <DesignExploration />
-      <DesignChallange />
-      <Footer />
+      <Hero />
+      <Gallery />
+      <RecentWork />
+      <Contact />
     </>
   );
 }
