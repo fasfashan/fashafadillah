@@ -1,5 +1,5 @@
 import Bootcamp from "./BootChampion.jpg";
-import Comika from "./Comika.jpg";
+import Comika from "./Comika.id.jpg";
 import Staycation from "./staycation.jpg";
 import Saham from "./StockExchange.jpg";
 import ComikaEvent from "./ComikaEvent.png";
