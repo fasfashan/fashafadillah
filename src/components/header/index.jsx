@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import LinkedIn from "../../assets/icons/LinkedIn";
+import { ArrowTopRightIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import Fasha from "../../assets/images/fasha.jpg";
 import Github from "../../assets/icons/Github";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,41 +30,40 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
       className={`sticky top-0  ${
-        isScrolled
-          ? "shadow-sm backdrop-blur-sm  border-b border-neutral-300"
-          : ""
+        isScrolled ? "shadow-xs bg-white  border-b border-neutral-200" : ""
       }`}
     >
-      <nav className=" p-5 text-emerald-50 max-w-5xl m-auto  flex items-center justify-between  ">
+      <nav className=" px-5 py-3 text-emerald-50 max-w-6xl m-auto  flex items-center justify-between  ">
         <div className="flex items-center gap-x-4">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="hover:opacity-50  transition-all"
-            href="https://github.com/fasfashan"
-          >
-            <Github />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="hover:opacity-50  transition-all"
-            href="https://www.linkedin.com/in/muhamad-fasha-fadillah/"
-          >
-            {" "}
-            <LinkedIn />
+          <a href="/">
+            <img src={Fasha} className="h-10 rounded-full" alt="" />
           </a>
         </div>
 
-        <a
-          className="font-semibold transition-all rounded-md  px-5 py-2   btn hover:opacity-90 text-sm text-white"
-          href="mailto:pasapadilah1410@gmail.com"
-        >
-          Get in Touch
-        </a>
+        <div className="flex border border-grey bg-secondary shadow-xs rounded-full text-black text-sm transition-all  md:gap-10 gap-4 py-2 px-4">
+          <a
+            className="flex hover:opacity-50 items-center gap-1"
+            href="https://www.linkedin.com/in/muhamad-fasha-fadillah/"
+          >
+            LinkedIn <ArrowTopRightIcon />
+          </a>
+          <a
+            className="flex hover:opacity-50 items-center gap-1"
+            href="https://twitter.com/fasfashan"
+          >
+            Twitter <ArrowTopRightIcon />
+          </a>
+          <a
+            className="flex hover:opacity-50 items-center gap-1"
+            href="https://github.com/fasfashan"
+          >
+            Github <ArrowTopRightIcon />
+          </a>
+        </div>
       </nav>
     </header>
   );
