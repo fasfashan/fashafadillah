@@ -1,4 +1,3 @@
-import Gallery from "./components/gallery";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import RecentWork from "./components/recent-work";
@@ -9,7 +8,6 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Gallery />
       <RecentWork />
       <Exploration />
       <Contact />

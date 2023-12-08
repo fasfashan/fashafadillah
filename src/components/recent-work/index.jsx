@@ -3,6 +3,7 @@
 import Dibimbing from "../../assets/images/dibimbing.jpg";
 import Niagahoster from "../../assets/images/Niagahoster.jpg";
 import ProWork from "../../assets/images/ProWork.jpg";
+import ComikaEvent from "../../assets/images/ComikaEvent.jpg";
 import {
   ArrowRightIcon,
   ChevronRightIcon,
@@ -22,7 +23,7 @@ export default function RecentWork() {
   };
   return (
     <section id="selected-work" className="max-w-6xl p-5 m-auto">
-      <div className=" mb-10 mt-36    border-b border-grey">
+      <div className=" mb-10 mt-24    border-b border-grey">
         <h2 className="  text-2xl ">Selected work</h2>
       </div>
       <div className="grid md:grid-cols-2 gap-10 grid-cols-1">
@@ -77,6 +78,20 @@ export default function RecentWork() {
         </div>
         <div className="space-y-6">
           <img className="rounded-lg" src={ProWork} alt="ProWork" />
+          <p className="text-paragraf  leading-relaxed">
+            ProWork is a co-working space project developed by PT Murni
+            Solusindo Nusantara (PT Murni). This project is made based on PT
+            Murni’s commitment to empower business and its people, by providing
+            well-designed and functional spaces to work in.
+          </p>
+          <div>
+            <a className="bg-neutral-100 cursor-default transition-all flex items-center gap-1 w-fit  rounded-lg text-neutral-400 border border-grey shadow-sm px-4 py-2">
+              Case study in progress <CrossCircledIcon />
+            </a>
+          </div>
+        </div>
+        <div className="space-y-6">
+          <img className="rounded-lg" src={ComikaEvent} alt="ComikaEvent" />
           <p className="text-paragraf  leading-relaxed">
             ProWork is a co-working space project developed by PT Murni
             Solusindo Nusantara (PT Murni). This project is made based on PT

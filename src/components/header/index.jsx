@@ -34,17 +34,18 @@ export default function Header() {
   return (
     <header
       className={`sticky top-0  ${
-        isScrolled ? "shadow-xs bg-white  border-b border-neutral-200" : ""
+        isScrolled ? "shadow-sm bg-white  border-b border-neutral-200" : ""
       }`}
     >
       <nav className=" px-5 py-3 text-emerald-50 max-w-6xl m-auto  flex items-center justify-between  ">
-        <div className="flex items-center gap-x-4">
-          <a href="/">
-            <img src={Fasha} className="h-10 rounded-full" alt="" />
+        <div className="flex  items-center gap-x-4">
+          <a className="text-black text-2xl font-bold" href="/">
+            Fa<span className="text-primary">s</span>ha
+            <span className="text-primary">.</span>
           </a>
         </div>
 
-        <div className="flex border border-grey bg-secondary shadow-xs rounded-full text-black text-sm transition-all  md:gap-10 gap-4 py-2 px-4">
+        <div className="flex border border-grey bg-secondary shadow-xs rounded-full text-black font-medium text-sm transition-all  md:gap-10 gap-4 py-2 px-4">
           <a
             className="flex hover:opacity-50 items-center gap-1"
             href="https://www.linkedin.com/in/muhamad-fasha-fadillah/"
